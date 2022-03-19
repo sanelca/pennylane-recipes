@@ -21,3 +21,5 @@ records.each do |recipe|
         )
     newRecipe.save    
 end
+
+puts "Records inserted"
