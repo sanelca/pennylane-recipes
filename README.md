@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this project you need to do next: step by step please
 
-Things you may want to cover:
+* Clone development branch of this project:
+git clone --branch development https://github.com/sanelca/pennylane-recipes.git
 
-* Ruby version
+* You must to install meilisearch locally: 
+Run in gitbash: 
+curl -L https://install.meilisearch.com | sh
 
-* System dependencies
+After you install meilisearch run next command:
+ ./meilisearch --master-key="pennylane-test22"
 
-* Configuration
+* Run in terminal: bundle install
 
-* Database creation
+* Run in terminal: yarn install
 
-* Database initialization
+* Find model Recipe in app/models/recipe.rb and cut all codes from the class
+it should look like this:
 
-* How to run the test suite
+class Recipe < ApplicationRecord
+end
 
-* Services (job queues, cache servers, search engines, etc.)
+run in terminal:
+rake db:create
+rake db:migrate
+rake db:seed
 
-* Deployment instructions
+After that all data from JSON will be inserted into database
 
-* ...
+After all these steps all what you need to do is to run project
+rails server and that is it...
+
