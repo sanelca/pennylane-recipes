@@ -3,14 +3,14 @@
 To run this project you need to do next: step by step please
 
 * Clone development branch of this project:
-git clone --branch development https://github.com/sanelca/pennylane-recipes.git
+`git clone --branch development https://github.com/sanelca/pennylane-recipes.git`
 
 * You must to install meilisearch locally: 
 Run in gitbash: 
-curl -L https://install.meilisearch.com | sh
+`curl -L https://install.meilisearch.com | sh`
 
 After you install meilisearch run next command:
- ./meilisearch --master-key="pennylane-test22"
+`./meilisearch --master-key="pennylane-test22"`
 
 * Run in terminal: bundle install
 
