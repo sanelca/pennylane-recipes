@@ -1,0 +1,32 @@
+body ul.ais-Hits-list { 
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body ul.ais-Hits-list li {
+    padding: 16px;
+    margin: 5px;
+    background-color: #f2fdff;    
+}
+.ais-SearchBox {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+body ul.ais-Hits-list li img {
+    width:100%;
+}
+body ul.ais-Hits-list li div div {
+    width: calc(100% - 4%);
+    float: left;
+    padding: 2%;    
+}
+body ul.ais-Hits-list li .hit-image {
+    float: left;
+    max-height: 300px;
+    overflow: hidden;
+    height: 300px; 
+}
