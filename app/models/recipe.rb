@@ -6,5 +6,5 @@ class Recipe < ApplicationRecord
         displayed_attributes ['id', 'title', 'ingredients', 'cuisine', 'category', 'author', 'image']
         searchable_attributes ['title', 'ingredients', 'category']
         filterable_attributes ['title']
-    end    
+    end
 end
